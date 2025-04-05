@@ -1,0 +1,1 @@
+jar -c -m manifest -f log.jar *.class
