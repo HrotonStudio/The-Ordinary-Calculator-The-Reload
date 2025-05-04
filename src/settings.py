@@ -6,3 +6,4 @@ Background = settings["Background"]
 Debug = settings["Debug"] == "True"
 MusicIsPlaying = settings["MusicIsPlaying"] == "True"
 MusicContinuePlaying = settings["MusicContinuePlaying"]
+IsHaveKey = settings["IsHaveKey"] == "True"

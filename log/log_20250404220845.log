@@ -1,3 +1,0 @@
-2025-04-04 22:08:46.547 I MyMainWindow.__init__ -> main_pyside6.py:114                 初始化完成
-2025-04-04 22:08:46.547 I MyMainWindow.__init__.custom_tips -> main_pyside6.py:117     提示信息展示
-2025-04-04 22:08:46.594 I MyMainWindow.play_music -> main_pyside6.py:123               背景音乐播放

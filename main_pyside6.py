@@ -7,10 +7,14 @@ from src.settings import *
 from src.background_picture import picture
 from src.background_music import *
 from ui.py.main_window_ui import Ui_MainWindow
+from utils.login import login
 
 class MyMainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
+
+        user_name = login()
+
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 

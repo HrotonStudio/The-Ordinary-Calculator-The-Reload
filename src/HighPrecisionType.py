@@ -1,4 +1,4 @@
-import os, sys, random, time
+import os, sys, random, time, shutil
 from typing import Union
 try:
     from src.error_type import *
@@ -261,9 +261,6 @@ class HighPrecisionInt(int):
             result = "-" + str(result)
         return HighPrecisionInt(result)
         
-
-
-        
 class HighPrecisionFloat(float):
     def __init__(self, basic_num:Union[int, float, str, "HighPrecisionFloat", HighPrecisionInt]):
         super().__init__()
@@ -431,8 +428,8 @@ if __name__ == "__main__":
     HPI = HighPrecisionInt
     HPF = HighPrecisionFloat
     aaa = time.time()
-    a = HPI(114514) ** HPI(3114514)
     aaaaa = time.time()
-    b = 114514 ** 3114514
+    print(f"{aaaaa - aaa}")
+    b = 114514 ** 300000
     bbbb = time.time()
-    print(f"{aaaaa - aaa}\n{bbbb - aaaaa}")
+    print(f"{bbbb - aaaaa}")
